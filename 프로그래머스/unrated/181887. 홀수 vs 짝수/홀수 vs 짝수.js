@@ -8,7 +8,5 @@ function solution(num_list) {
       even += num_list[i];
     }
   }
-  if (odd > even) {
-    return odd;
-  } else { return even; }
+  return odd > even ? odd : even;
 }
