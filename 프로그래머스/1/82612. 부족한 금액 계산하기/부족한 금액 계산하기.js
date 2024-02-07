@@ -3,11 +3,7 @@ function solution(price, money, count) {
   let result = 0;
   for (let i = 0; i <= count; i++) {
     result += price * i;
-    if (result > money) {
-      answer = result - money;
-    } else {
-      answer = 0;
-    }
+    (result > money) ? answer = result - money : answer = 0;
   }
   return answer;
 }
